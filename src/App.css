@@ -1,38 +1,86 @@
-.App {
+.input-body {
+  padding: 10px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.input-body input {
+  width: 40%;
+  padding: 5px;
+  border-radius: 10px;
+  border: 1px solid #cecece;
+  margin-right: 5px;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
+    rgba(17, 17, 26, 0.05) 0px 8px 32px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.input-body input:focus {
+  color: rgb(0, 38, 73);
+  /* width: 50%; */
+  background-color: #d7e3f5;
+  box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;
+  border: 0.5px solid #cecece;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.input-body button {
+  width: 150px;
+  padding: 5px;
+  border-radius: 10px;
+  border: 1px solid #cecece;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
+    rgba(17, 17, 26, 0.05) 0px 8px 32px;
+}
+
+.input-body button:active {
+  box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset,
+    rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+}
+
+.list-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  gap: 20px;
+  align-items: center;
+  /* border: 1px solid #cecece; */
+  margin: 20px 0;
+}
+
+.text-value {
+  width: 40%;
+  /* border: 1px solid #eeeded; */
+  padding: 10px;
+}
+
+.status-btn {
+  border: 1px solid #cecece;
+  border-radius: 5px;
+  padding: 10px;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+.list-container button {
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+    rgba(231, 45, 45, 0.15) 0px -36px 30px 0px inset,
+    rgba(241, 31, 31, 0.1) 0px -79px 40px 0px inset,
+    rgba(221, 34, 34, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
+    rgba(226, 36, 36, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px,
+    rgba(216, 32, 32, 0.09) 0px 32px 16px;
+  padding: 10px;
+  border: 1px solid rgb(240, 69, 69);
+  background-color: rgb(247, 163, 163);
+  border-radius: 10px;
   color: white;
+  font-size: 105%;
 }
 
-.App-link {
-  color: #61dafb;
+.list-container button:active {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.app-title {
+  text-align: center;
+  font-size: 140%;
+  font-weight: 700;
+  color: rgb(90, 43, 43);
 }
